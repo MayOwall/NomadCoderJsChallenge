@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/day9assignment.css">
+    <title>Same? or NOT!</title>
+</head>
+<body>
+    <h1 id="title">Random Number Game</h1>
+    <form>
+        <h2>Generate a number between 0 and</h2>
+        <input id="max-number" type="number" min="0" required><br>
+        <h3>Guess the number</h3>
+        <input id="user-number" type="number" min="0" required>
+        <input type="submit" value="play!">
+    </form>
+    <h3 id="result" class="hidden"></h3>
+    <h3 id="won" class="hidden">You won!</h3>
+    <h3 id="loose" class="hidden">You Loose...</h3>
+    <script src="src/day9assignment.js"></script>
+</body>
+</html>
