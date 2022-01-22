@@ -1,9 +1,0 @@
-* {
-    box-sizing: border-box;
-}
-form h2, form h3 {
-    display: inline-block;
-}
-.hidden {
-    display: none;
-}
