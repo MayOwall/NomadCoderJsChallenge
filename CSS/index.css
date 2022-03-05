@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(176, 233, 255, 0.747), rgba(214, 192, 255, 0.808));
+}
+.hidden {
+    display: none;
+}
+section {
+    height: 90%;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 0.2rem solid white;
+    border-radius: 2rem;
+}
+#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+#section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 5rem 0;
+}
+
+article {
+    margin: 0 1rem;
+}
+    #login-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+        #loginForm div {
+            margin: 1rem;
+        }
+        #loginForm input:first-of-type {
+            width: 50%;
+            background: none;
+            border: none;
+            border-bottom: 0.3rem double white;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            z-index: 1000;
+        }
+        #login-box h1 {
+            padding: 0.2rem 2rem;
+            border-bottom: 0.3rem double white;
+            font-size: 2rem;
+            text-shadow: 0 -0.5rem 0.2rem rgba(106, 133, 255, 0.514);
+        }
+    #clock-box {
+        position: relative;
+        padding:  5rem 0 7rem 0;
+        color: white;
+    }
+        #clock {
+            font-size: 8rem;
+            font-weight: 900;
+            text-shadow:  0 0 0.5rem rgba(76, 73, 255, 0.555);
+        }
+    #weather-block {
+        position: absolute;
+        bottom: 5rem;
+        padding: 0.5rem;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    #quote-block {
+        color: white;
+        text-align: center;
+        text-shadow:   0 0.5rem 0.15rem rgba(121, 106, 255, 0.411);
+    }
+        #quote {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        #quote-speaker{
+            font-size: 0.8rem;
+        }
+    #todo-block {
+        text-align: center;
+        color: white;
+    }
+        #todo-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-shadow:  0 0.3rem 0.15rem rgba(121, 106, 255, 0.411);
+        }
+        #todo-form {
+            padding: 1rem;
+        }
+            #todo-form input:first-of-type {
+                width: 12rem;
+                height: 1.8rem;
+                background: none;
+                border: none;
+                border-bottom: 1px solid white;
+                color: white;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            #todo-form input:last-of-type {
+                width: 2rem;
+                height: 2rem;
+                margin-left: 0.5rem;
+                background-color: white;
+                border: none;
+                border-radius: 1rem;
+                box-shadow:  0 0.2rem 0.15rem rgba(121, 106, 255, 0.411);
+                color: rgba(176, 197, 255, 0.712);
+                font-size: 2rem;
+                font-weight: 100;
+                line-height: 2rem;
+            }
+            #todo-form input:last-of-type:active {
+                background: rgba(202, 202, 202, 0.514);
+                box-shadow: 0 0.3rem 0.15rem rgba(121, 106, 255, 0.411) inset;
+            }
+        #todo-block ul {
+            display: block;
+            list-style: none;
+            padding: 1rem 2rem;
+            text-align: left;
+        }
+            #todo-block li {
+                padding: 0.2rem 0;
+            }
+                #todo-block li button {
+                    padding: 0.2rem;
+                    background: rgba(255, 255, 255, 0.301);
+                    border: 1px solid white;
+                    border-radius: 1rem;
+                    box-shadow: 0.1rem 0.1rem 0.2rem rgba(121, 106, 255, 0.411) ;
+                }
+                #todo-block li button:active {
+                    background-color: rgba(128, 128, 128, 0.479);
+                    box-shadow: 0.2rem 0.2rem 0.2rem gray inset;
+                }
+                #todo-block li span {
+                    padding: 0.2rem 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    line-height: 1.2rem;
+                }

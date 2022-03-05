@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owall's JS Chrome</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <section id="section1">
+        <article id="login-box">
+            <form id="loginForm" class="hidden">
+                <div>please write your name</div>
+                <input type="text"  maxlength="15">
+            </form>
+            <h1 class="hidden"></h1>
+        </article>
+        <article id="weather-block">
+            <span id="weather-city"></span>
+            <span id="weather-temp"></span>
+            <span id="weather-weather"></span>
+        </article>
+        <article id="clock-box">
+            <h2 id="clock">00 : 00</h2>
+        </article>
+        <article id="quote-block">
+            <div id="quote">quotes</div>
+            <div id="quote-speaker">quotes speaker</div>
+        </article>
+        <article id="background-block" class="hidden">
+            <img src="IMG/0.jpg">
+        </article>
+    </section>
+    <section id="section2">
+        <article id="todo-block">
+            <div id="todo-title">To do List</div>
+            <form id="todo-form">
+                <input type="text" required>
+                <input type="submit" value="+">
+            </form>
+            <ul id="todo-list"></ul>    
+        </article>
+    </section>
+    <script src="JS/greetings.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/quotes.js"></script>
+    <script src="JS/backgrounds.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
+</body>
+</html>
